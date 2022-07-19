@@ -7,84 +7,110 @@
     <meta name="keywords" content="sergei, cv, resume">
     <meta name="description" content="Это сайт - резюме Сергея Тарасова">
     <title>Сергей Резюме</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img\photo_2021-07-13_17-59-37.jpg" alt="Моё Фото" width="200">
-    <h1><strong>Тарасов Сергей</strong></h1>
-    <p>Я <strong>студент-программист</strong> и имею законченное <strong>высшее техническое образование</strong>.</p>
-    <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em>.</p>
-    <p><strong>Список социальных сетей:</strong></p>
-    
-    <a href="https://vk.com/long_pants" target="_blank">VK</a>
-    |
-    <a href="https://www.youtube.com/channel/UCJsQvRE_mZluZOU-EKrxcxg" target="_blank">YouTube</a>
-    |
-    <a href="https://t.me/tarasoff105" target="_blank">Telegram</a>
 
-    <hr>
+    <div class="container">
 
-    <h3>Мои хобби:</h3>
-    <ol>
-        <li>Путешествия</li>
-        <li>Программирование</li>
-        <li>Философия</li>
-        <li>Спорт</li>
-    </ol>
+        <div class="info">
 
-    <hr>
+            <img src="img\photo_2021-07-13_17-59-37.jpg" alt="Моё Фото" class="avatar">
 
-    <h3>Опыт работы:</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+            <div class="info-text">
 
-        <tbody>
-            <tr>
-                <td>Авиалинии Мордовии</td>
-                <td>Агент по организации пасажирских перевозок</td>
-                <td>2018</td>
-            </tr>
+                <h1><strong>Тарасов Сергей</strong></h1>
+                <p>Я <strong>студент-программист</strong> и имею законченное <strong> высшее техническое образование</strong>.</p>
+                <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em>.</p>
+                <h3><strong>Список социальных сетей:</strong></h3>
+                
+                <a href="https://vk.com/long_pants" target="_blank">VK</a>
+                |
+                <a href="https://www.youtube.com/channel/UCJsQvRE_mZluZOU-EKrxcxg" target="_blank">YouTube</a>
+                |
+                <a href="https://t.me/tarasoff105" target="_blank">Telegram</a>
+            </div>
 
-            <tr>
-                <td>ИП Ерастов А.В.</td>
-                <td>Инженер-конструктор</td>
-                <td>2019-2021</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h3>Связаться со мной</h3>
-
-    <form>
-
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="name" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <hr>
+
+        <div class="card bg-green">
+            <h3>Мои хобби:</h3>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Программирование</li>
+                <li>Философия</li>
+                <li>Спорт</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="massages">Ваше сообщение:</label>
-            <br>
-            <textarea id="massages" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        <hr>
+        
+        <div class="card bg-red">
+            <h3>Опыт работы:</h3>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+
+                <tbody>
+                    <tr>
+                        <td>Авиалинии Мордовии</td>
+                        <td>Агент по организации пасажирских перевозок</td>
+                        <td>2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>ИП Ерастов А.В.</td>
+                        <td>Инженер-конструктор</td>
+                        <td>2019-2021</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <button type="submit">Отправить</button>
+        <hr>
 
-    </form>
 
-    <hr>
+        <form action="/" class="form">
+
+            <h3>Связаться со мной</h3>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="name" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+            <div class="form-group">
+                <label for="massages">Ваше сообщение:</label>
+                <textarea id="massages" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить</button>
+
+        </form>
+
+        <hr>
+
+        <p>Если у вас есть предложения или просто вас зовут "Александр", пожалуйста, перейдите по ссылке и ознакомтесь:</p>
+        <a href="https://www.youtube.com/watch?v=KLcX7D5Sj7E" target="_blank">Очень важная ссылка</a>
+    </div>
+
+
+
 
 </body>
 </html>
